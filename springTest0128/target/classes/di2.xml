@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<bean id="coffee" class="com.itbank.test0128.Coffee">
+	<constructor-arg value="5000"></constructor-arg>
+	<constructor-arg ref="green"></constructor-arg>
+	<constructor-arg ref="cal"></constructor-arg>
+
+</bean>
+<bean id="cal" class="com.itbank.test0128.Cal"></bean>
+<bean id="green" class="com.itbank.test0128.GreenCar"></bean>
+
+<bean id="coffee2" class="com.itbank.test0128.Coffee2">
+	<property name="cal" ref="cal"></property>
+	<property name="green" ref="green"></property>
+	<property name="price" value="5000"></property>
+</bean>
+
+</beans>
