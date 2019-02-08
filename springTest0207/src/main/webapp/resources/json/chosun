@@ -1,0 +1,11 @@
+주요
+http://myhome.chosun.com/rss/www_section_rss.xml
+https://api.rss2json.com/v1/api.json?rss_url=http%3A%2F%2Fmyhome.chosun.com%2Frss%2Fwww_section_rss.xml&api_key=t7v4mko2hb172txjyyocvxoljkmpifqarrfdgari
+
+연예
+http://www.chosun.com/site/data/rss/ent.xml
+https://api.rss2json.com/v1/api.json?rss_url=http%3A%2F%2Fwww.chosun.com%2Fsite%2Fdata%2Frss%2Fent.xml&api_key=t7v4mko2hb172txjyyocvxoljkmpifqarrfdgari
+
+포토
+http://photo.chosun.com/site/data/rss/rss.xml
+https://api.rss2json.com/v1/api.json?rss_url=http%3A%2F%2Fphoto.chosun.com%2Fsite%2Fdata%2Frss%2Frss.xml&api_key=t7v4mko2hb172txjyyocvxoljkmpifqarrfdgari
