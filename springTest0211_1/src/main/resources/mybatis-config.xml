@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	
+	<!-- type (해당 DTO) 값을 alias (별칭) 으로 등록 -->
+	<typeAliases>
+		<typeAlias type="com.itbank.mvc0211_1.MemberDTO" alias="memDTO"></typeAlias>
+	</typeAliases>
+	
+	<!-- mapper파일 위치, 이름 확인 -->
+	<mappers>
+		<mapper resource="mapper/member.xml" />
+	</mappers>
+</configuration>

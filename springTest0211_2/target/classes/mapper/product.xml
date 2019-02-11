@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="product">
+
+	<!-- SELECT == parameterType : 입력값 / resultType : 출력값 -->
+	<select id="select" parameterType="proDTO" resultMap="rs">
+		SELECT * FROM product
+		WHERE pid = #{pid}
+	</select>
+	
+	<!-- ResultSet == property : 변수명 / column : 테이블 컬럼명 -->
+	<resultMap type="proDTO" id="rs">
+		<result property="pid" column="pid" />
+		<result property="pname" column="pname" />
+		<result property="price" column="price" />
+		<result property="stock" column="stock" />
+	</resultMap>
+	
+	<!-- SELECT ALL -->
+	<select id="selectAll" resultMap="rs">
+		SELECT * FROM product
+	</select>
+	
+	<!-- INSERT -->
+	<insert id="insert" parameterType="proDTO">
+		INSERT INTO product
+		VALUES(#{pid},#{pname},#{price},#{stock})
+	</insert>
+	
+	<!-- UPDATE -->
+	<update id="update" parameterType="proDTO">
+		UPDATE product
+		SET price = #{price}
+		WHERE pid = #{pid}
+	</update>
+	
+	<!-- DELETE -->
+	<delete id="delete" parameterType="proDTO">
+		DELETE FROM product WHERE
+		pid = #{pid}
+	</delete>
+
+</mapper>
